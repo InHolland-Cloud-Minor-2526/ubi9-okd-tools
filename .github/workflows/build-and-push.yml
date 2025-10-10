@@ -13,7 +13,7 @@ jobs:
       packages: write
     env:
       IMAGE_NAME: ubi9-okd-tools
-      REGISTRY: ghcr.io/InHolland-Cloud-Minor-2526
+      REGISTRY: ghcr.io/inholland-cloud-minor-2526
 
     steps:
     - uses: actions/checkout@v5
