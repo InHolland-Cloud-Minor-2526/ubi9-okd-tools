@@ -2,8 +2,8 @@ FROM registry.access.redhat.com/ubi9-minimal:9.6-1755695350 AS build
 
 RUN microdnf install -y gzip tar && microdnf clean all
 
-ADD download-and-verify-client.sh .
-RUN ./download-and-verify-client.sh
+ADD download-and-verify-tools.sh .
+RUN ./download-and-verify-tools.sh
 
 FROM registry.access.redhat.com/ubi9-minimal:9.6-1755695350
 
