@@ -21,8 +21,7 @@ sha256sum --check --ignore-missing sha256sum.txt
 tar zxf openshift-client-linux-amd64-rhel9-$VERSION.tar.gz && mv oc kubectl /usr/local/bin/
 
 # Download Kubeconform
-VERSION="v0.7.0"
-BASE="https://github.com/yannh/kubeconform/releases/download/"
+BASE="https://github.com/yannh/kubeconform/releases/download/v0.7.0"
 
 for file in CHECKSUMS kubeconform-linux-amd64.tar.gz
 do
@@ -32,4 +31,4 @@ done
 # Verify downloads
 sha256sum --check --ignore-missing CHECKSUMS
 
-tar zxf kubeconform-linux-amd64.tar.gz
+tar zxf kubeconform-linux-amd64.tar.gz && mv kubeconform /usr/local/bin/
