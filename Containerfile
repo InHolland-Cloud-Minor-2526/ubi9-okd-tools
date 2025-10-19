@@ -11,4 +11,4 @@ LABEL org.opencontainers.image.source="https://github.com/InHolland-Cloud-Minor-
       org.opencontainers.image.description="Let's run a okd oc client in a container"
 
 COPY --from=build /usr/local/bin/* /usr/local/bin/
-
+COPY kubeconform /usr/local/share/kubeconform/
