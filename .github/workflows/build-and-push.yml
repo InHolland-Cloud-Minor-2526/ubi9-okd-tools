@@ -16,7 +16,7 @@ jobs:
       REGISTRY: ghcr.io/inholland-cloud-minor-2526
 
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
 
     - name: Buildah Action
       id: build-image
