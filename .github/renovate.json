@@ -13,5 +13,8 @@
       "/Containerfile/"
     ]
   },
+  "labels": [
+    "dependencies"
+  ],
   "configMigration": true
 }
