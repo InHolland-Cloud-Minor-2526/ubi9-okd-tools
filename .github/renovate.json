@@ -1,9 +1,12 @@
 {
   "extends": [
-    "config:base", ":disableDependencyDashboard"
+    "config:recommended",
+    ":disableDependencyDashboard"
   ],
   "dockerfile": {
-    "fileMatch": ["Containerfile"]
+    "managerFilePatterns": [
+      "/Containerfile/"
+    ]
   },
   "configMigration": true
 }
