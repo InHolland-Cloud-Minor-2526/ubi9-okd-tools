@@ -1,3 +1,8 @@
 # ubi9-okd-tools
 
-Let's run a OKD `oc` client in a container
+This image can be used to run the `oc` client in a container. Don't forget to add RoleBindings to the ServiceAccount that will be used to run the container.
+
+### Tools available in the container
+
+* the `oc` client as release by the OKD project
+* everything from `procps-ng`, like `watch`
