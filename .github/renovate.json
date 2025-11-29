@@ -1,8 +1,8 @@
 {
   "extends": [
-    ":disableDependencyDashboard",
     "config:recommended",
-    "helpers:pinGitHubActionDigests"
+    "helpers:pinGitHubActionDigests",
+    ":disableDependencyDashboard"
   ],
   "enabledManagers": [
     "dockerfile",
