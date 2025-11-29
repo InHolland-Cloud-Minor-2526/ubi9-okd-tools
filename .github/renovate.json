@@ -4,5 +4,6 @@
   ],
   "dockerfile": {
     "fileMatch": ["Containerfile"]
-  }
+  },
+  "configMigration": true
 }
