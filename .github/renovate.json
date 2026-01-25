@@ -1,9 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-    "helpers:pinGitHubActionDigests",
-    ":disableDependencyDashboard"
+    "config:best-practices"
   ],
   "enabledManagers": [
     "dockerfile",
@@ -16,6 +14,5 @@
   },
   "labels": [
     "dependencies"
-  ],
-  "configMigration": true
+  ]
 }
