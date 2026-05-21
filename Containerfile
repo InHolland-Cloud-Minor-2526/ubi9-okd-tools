@@ -1,11 +1,11 @@
-FROM registry.access.redhat.com/ubi9-minimal:9.7-1773204619@sha256:69f5c9886ecb19b23e88275a5cd904c47dd982dfa370fbbd0c356d7b1047ef68 AS build
+FROM registry.access.redhat.com/ubi9-minimal:9.8-1777460003@sha256:24650313873554b6ba16c1a1b6b9f9142604f6ab735113e1695faf2dd07fdede AS build
 
 RUN microdnf install -y gzip tar && microdnf clean all
 
 ADD download-and-verify-tools.sh .
 RUN ./download-and-verify-tools.sh
 
-FROM registry.access.redhat.com/ubi9-minimal:9.7-1773204619@sha256:69f5c9886ecb19b23e88275a5cd904c47dd982dfa370fbbd0c356d7b1047ef68
+FROM registry.access.redhat.com/ubi9-minimal:9.8-1777460003@sha256:24650313873554b6ba16c1a1b6b9f9142604f6ab735113e1695faf2dd07fdede
 
 LABEL org.opencontainers.image.source="https://github.com/InHolland-Cloud-Minor-2526/ubi9-okd-tools" \
       org.opencontainers.image.description="Let's run a okd oc client in a container"
